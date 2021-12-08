@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="4">
+            <ion-router-link routerLink="/">
+              <img width="80" src="assets/CarStore.png">
+            </ion-router-link>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="person"></ion-icon>
+            Perfil
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-grid id="ion-grid" class="bg-lightGray">
+      <ion-row id="ion-row">
+        <ion-item color="bg-lightGray" lines="none">
+          <h2>Login</h2>
+        </ion-item>
+      </ion-row>
+
+      <ion-row id="ion-row">
+        <ion-col size="11">
+          <ion-item lines="none" style="border-radius: 10px; background-color: white;">
+            <ion-input placeholder="Digite seu email" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="11">
+          <ion-item lines="none" style="border-radius: 10px; background-color: white;">
+            <ion-input placeholder="Digite sua senha" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row id="ion-row">
+        <ion-col size="11">
+          <ion-button expand="block" color="success">Entrar</ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row id="ion-row" class="ion-justify-content-center">
+        <ion-col size="2">ou</ion-col>
+      </ion-row>
+
+      <ion-row id="ion-row">
+        <ion-col size="11">
+          <ion-button expand="block" color="light">
+            <img width="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" style="margin-right: 15px;">
+            Entrar com Google
+          </ion-button>
+        </ion-col>
+        <ion-col size="11">
+          <ion-button expand="block" color="primary">
+            <ion-icon name="logo-facebook" style="margin-right: 15px;"></ion-icon>
+            Entrar com Facebook
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row id="ion-row">
+        <ion-col size="11" style="margin-left: 48px;">
+          <span style="font-size: 14px;">
+            Não tem uma conta?
+            <ion-router-link color="danger" routerLink="/tabs/tab4">Crie a sua!</ion-router-link>
+          </span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

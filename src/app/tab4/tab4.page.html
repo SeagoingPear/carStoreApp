@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="4">
+            <ion-router-link routerLink="/">
+              <img width="80" src="assets/CarStore.png">
+            </ion-router-link>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="person"></ion-icon>
+            Cadastro
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-grid id="ion-grid" class="bg-lightGray">
+      <ion-row id="ion-row">
+        <ion-item color="bg-lightGray" lines="none">
+          <h2>Cadastre-se</h2>
+        </ion-item>
+      </ion-row>
+
+      <ion-row id="ion-row">
+        <ion-col size="11">
+          <ion-item lines="none" style="border-radius: 10px; background-color: white;">
+            <ion-input placeholder="Nome completo" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="11">
+          <ion-item lines="none" style="border-radius: 10px; background-color: white;">
+            <ion-input placeholder="Digite seu email" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="11">
+          <ion-item lines="none" style="border-radius: 10px; background-color: white;">
+            <ion-input placeholder="Digite sua senha" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="11">
+          <ion-item lines="none" style="border-radius: 10px; background-color: white;">
+            <ion-input placeholder="Confirme sua senha" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="11">
+          <ion-item lines="none" color="bg-lightGray">
+            <ion-checkbox checked="true"></ion-checkbox>
+            <span style="margin-left: 10px; ">Cliente</span>
+          </ion-item>
+          <ion-item lines="none" color="bg-lightGray">
+            <ion-checkbox></ion-checkbox>
+            <span style="margin-left: 10px; ">Revendedor</span>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row id="ion-row">
+        <ion-col size="11">
+          <ion-button expand="block" color="success">Entrar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
